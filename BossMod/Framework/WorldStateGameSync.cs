@@ -177,14 +177,22 @@ sealed class WorldStateGameSync : IDisposable
             Service.Log($"[WSG] ApplyKnockback address = {_applyKnockbackHook.Address:X}");
         }
 
-        _inventoryAckHook = Service.Hook.HookFromSignature<InventoryAckDelegate>("E8 ?? ?? ?? ?? E9 ?? ?? ?? ?? 48 8D 57 10 8B CE E8 ?? ?? ?? ?? E9 ?? ?? ?? ?? 48 8B D7", InventoryAckDetour);
-        _inventoryAckHook.Enable();
-        Service.Log($"[WSG] InventoryAck address = {_inventoryAckHook.Address:X}");
+        try
+        {
+            _inventoryAckHook = Service.Hook.HookFromSignature<InventoryAckDelegate>("E8 ?? ?? ?? ?? E9 ?? ?? ?? ?? 48 8D 57 10 8B CE E8 ?? ?? ?? ?? E9 ?? ?? ?? ?? 48 8B D7", InventoryAckDetour);
+            _inventoryAckHook.Enable();
+            Service.Log($"[WSG] InventoryAck address = {_inventoryAckHook.Address:X}");
+        }
+        catch (Exception e)
+        {
+            Service.Log($"[WSG] Failed to hook InventoryAck: {e.Message}. Inventory updates will be disabled.");
+            _inventoryAckHook = null!;
+        }
     }
 
     public void Dispose()
     {
-        _inventoryAckHook.Dispose();
+        _inventoryAckHook?.Dispose();
         _applyKnockbackHook.Dispose();
         _processLegacyMapEffectHook.Dispose();
         _processMapEffect1Hook.Dispose();
@@ -1125,7 +1133,8 @@ sealed class WorldStateGameSync : IDisposable
 
     private unsafe void InventoryAckDetour(uint a1, void* a2)
     {
-        _inventoryAckHook.Original(a1, a2);
-        _needInventoryUpdate = true;
+        _inventoryAckHook?.Original(a1, a2);
+        if (_inventoryAckHook != null)
+            _needInventoryUpdate = true;
     }
 }
