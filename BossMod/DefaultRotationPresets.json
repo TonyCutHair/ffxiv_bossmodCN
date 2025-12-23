@@ -2,417 +2,417 @@
   "version": 7,
   "payload": [
     {
-      "Name": "VBM Default",
+      "Name": "默认轮换",
       "Modules": {
         "BossMod.Autorotation.xan.DNC": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.MCH": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.MNK": [
           {
-            "Track": "RoF",
-            "Option": "Automatic"
+            "Track": "瑞鹤舞",
+            "Option": "自动"
           },
           {
-            "Track": "BH",
-            "Option": "Automatic"
+            "Track": "残影拳",
+            "Option": "自动"
           },
           {
-            "Track": "RoW",
-            "Option": "Automatic"
+            "Track": "真言舞",
+            "Option": "自动"
           },
           {
-            "Track": "RoF",
-            "Option": "Delay",
+            "Track": "瑞鹤舞",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "BH",
-            "Option": "Delay",
+            "Track": "残影拳",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "RoW",
-            "Option": "Delay",
+            "Track": "真言舞",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.PCT": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           },
           {
-            "Track": "Motifs",
-            "Option": "Downtime"
+            "Track": "主题",
+            "Option": "无战斗时间"
           }
         ],
         "BossMod.Autorotation.xan.PLD": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.SAM": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.SGE": [
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.VPR": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.NIN": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.GNB": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.SMN": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.DRK": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.RPR": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.WHM": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.AST": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.BRD": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.SCH": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.BLM": [
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.VeynWAR": [
           {
-            "Track": "AOE",
-            "Option": "AutoFinishCombo"
+            "Track": "范围伤害",
+            "Option": "自动完成连击"
           }
         ],
         "BossMod.Autorotation.xan.RDM": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ],
         "BossMod.Autorotation.xan.DRG": [
           {
-            "Track": "Buffs",
-            "Option": "Automatic"
+            "Track": "增益",
+            "Option": "自动"
           },
           {
-            "Track": "Buffs",
-            "Option": "Delay",
+            "Track": "增益",
+            "Option": "延迟",
             "Mod": "Shift, Ctrl"
           },
           {
-            "Track": "AOE",
-            "Option": "AOE"
+            "Track": "范围伤害",
+            "Option": "范围伤害"
           },
           {
-            "Track": "Targeting",
-            "Option": "Auto"
+            "Track": "选择目标",
+            "Option": "自动"
           }
         ]
       }
     },
     {
-      "Name": "VBM AI",
+      "Name": "AI预设",
       "Modules": {
         "BossMod.Autorotation.MiscAI.AutoTarget": [
           {
-            "Track": "General",
-            "Option": "Aggressive"
+            "Track": "常规",
+            "Option": "激进"
           },
           {
             "Track": "FATE",
-            "Option": "Enabled"
+            "Option": "启用"
           }
         ],
         "BossMod.Autorotation.MiscAI.NormalMovement": [
           {
-            "Track": "Destination",
-            "Option": "Pathfind"
+            "Track": "目标",
+            "Option": "寻路"
           }
         ]
       }

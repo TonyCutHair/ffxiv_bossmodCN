@@ -56,7 +56,7 @@ public sealed class UIRotationWindow : UIWindow
         var activeModule = _mgr.Bossmods.ActiveModule;
         if (activeModule != null)
         {
-            ImGui.TextUnformatted($"CD Plan:");
+            ImGui.TextUnformatted($"冷却计划:");
 
             if (activeModule.Info?.PlanLevel > 0)
             {
@@ -70,11 +70,11 @@ public sealed class UIRotationWindow : UIWindow
                 }
 
                 ImGui.SameLine();
-                if (ImGui.Button(plans.SelectedIndex >= 0 ? "Edit" : "New"))
+                if (ImGui.Button(plans.SelectedIndex >= 0 ? "编辑" : "新建"))
                 {
                     if (plans.SelectedIndex < 0)
                     {
-                        var plan = new Plan($"New {plans.Plans.Count + 1}", activeModule.GetType()) { Guid = Guid.NewGuid().ToString(), Class = player.Class, Level = activeModule.Info.PlanLevel };
+                        var plan = new Plan($"新建 {plans.Plans.Count + 1}", activeModule.GetType()) { Guid = Guid.NewGuid().ToString(), Class = player.Class, Level = activeModule.Info.PlanLevel };
                         plans.SelectedIndex = plans.Plans.Count;
                         _mgr.Database.Plans.ModifyPlan(null, plan);
                     }
@@ -85,19 +85,19 @@ public sealed class UIRotationWindow : UIWindow
                 {
                     ImGui.SameLine();
                     using var style = ImRaii.PushColor(ImGuiCol.Text, 0xff00ffff);
-                    UIMisc.HelpMarker(() => "You have a preset activated, which fully overrides the CD plan!", FontAwesomeIcon.ExclamationTriangle);
+                    UIMisc.HelpMarker(() => "您已激活预设，这将完全覆盖冷却计划！", FontAwesomeIcon.ExclamationTriangle);
                 }
             }
         }
 
-        ImGui.TextUnformatted("Modules: ");
+        ImGui.TextUnformatted("模块: ");
 
         var dups = _mgr.DuplicateModules.ToList();
         if (dups.Count > 0)
         {
             ImGui.SameLine();
             using var style = ImRaii.PushColor(ImGuiCol.Text, 0xff00ffff);
-            UIMisc.HelpMarker(() => $"You have multiple copies of the same module active ({string.Join(", ", dups)}). Only one of each will execute. This is probably not what you want.", FontAwesomeIcon.ExclamationTriangle);
+            UIMisc.HelpMarker(() => $"您有多个相同模块副本激活（{string.Join("、", dups)}）。每个只会执行一个。这可能不是您想要的。", FontAwesomeIcon.ExclamationTriangle);
         }
 
         if (_mgr.Presets.Any(p => p.Modules.Any(m => m.TransientSettings.Count > 0)))
@@ -108,7 +108,7 @@ public sealed class UIRotationWindow : UIWindow
             if (ImGui.IsItemHovered())
             {
                 using var tooltip = ImRaii.Tooltip();
-                ImGui.TextUnformatted("Transient strategies:");
+                ImGui.TextUnformatted("临时策略:");
                 foreach (var p in _mgr.Presets)
                 {
                     foreach (var m in p.Modules.Where(m => m.TransientSettings.Count > 0))
@@ -128,10 +128,10 @@ public sealed class UIRotationWindow : UIWindow
         ImGui.SameLine();
         ImGui.TextUnformatted(_mgr.ToString());
 
-        ImGui.TextUnformatted($"GCD={_mgr.WorldState.Client.Cooldowns[ActionDefinitions.GCDGroup].Remaining:f3}, AnimLock={_amex.EffectiveAnimationLock:f3}+{_amex.AnimationLockDelayEstimate:f3}, Combo={_amex.ComboTimeLeft:f3}, RBIn={_mgr.Bossmods.RaidCooldowns.NextDamageBuffIn():f3}");
+        ImGui.TextUnformatted($"GCD={_mgr.WorldState.Client.Cooldowns[ActionDefinitions.GCDGroup].Remaining:f3}, 动画锁={_amex.EffectiveAnimationLock:f3}+{_amex.AnimationLockDelayEstimate:f3}, 连击={_amex.ComboTimeLeft:f3}, 爆发={_mgr.Bossmods.RaidCooldowns.NextDamageBuffIn():f3}");
         foreach (var a in _mgr.Hints.ActionsToExecute.Entries)
         {
-            ImGui.TextUnformatted($"> {a.Action} ({a.Priority:f2}) @ ({a.Target?.Name ?? "<none>"})");
+            ImGui.TextUnformatted($"> {a.Action} ({a.Priority:f2}) @ ({a.Target?.Name ?? "<无>"})");
         }
     }
 
@@ -143,7 +143,7 @@ public sealed class UIRotationWindow : UIWindow
         if (mgr.Player == null)
             return modified;
 
-        ImGui.TextUnformatted("Presets:");
+        ImGui.TextUnformatted("预设:");
 
         ImGui.SameLine();
 
@@ -151,7 +151,7 @@ public sealed class UIRotationWindow : UIWindow
         using (ImRaii.PushColor(ImGuiCol.ButtonHovered, 0xff000050, mgr.IsForceDisabled))
         using (ImRaii.PushColor(ImGuiCol.ButtonActive, 0xff000060, mgr.IsForceDisabled))
         {
-            if (ImGui.Button("Disabled"))
+            if (ImGui.Button("禁用"))
             {
                 if (mgr.IsForceDisabled)
                     mgr.Clear();

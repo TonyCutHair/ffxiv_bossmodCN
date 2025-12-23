@@ -51,11 +51,11 @@ internal sealed class AIWindow : UIWindow
         ImGui.TextUnformatted(_manager.NaviStatus);
         _manager.Behaviour?.DrawDebug();
 
-        using (var leaderCombo = ImRaii.Combo("Follow", _manager.Behaviour == null ? "<idle>" : _manager.WorldState.Party[_manager.MasterSlot]?.Name ?? "<unknown>"))
+        using (var leaderCombo = ImRaii.Combo("跟随", _manager.Behaviour == null ? "<待命>" : _manager.WorldState.Party[_manager.MasterSlot]?.Name ?? "<未知>"))
         {
             if (leaderCombo)
             {
-                if (ImGui.Selectable("<idle>", _manager.Behaviour == null))
+                if (ImGui.Selectable("<待命>", _manager.Behaviour == null))
                 {
                     _manager.Enabled = false;
                 }
